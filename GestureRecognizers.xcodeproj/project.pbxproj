@@ -15,6 +15,7 @@
 		4BA0082A25BA411A00815634 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA0082825BA411A00815634 /* LaunchScreen.storyboard */; };
 		4BA0083725BA49DE00815634 /* PanGestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0083625BA49DE00815634 /* PanGestureViewController.swift */; };
 		4BA0083E25BA7AB700815634 /* SwipeGestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0083D25BA7AB700815634 /* SwipeGestureViewController.swift */; };
+		4BA0084325BA895D00815634 /* PinchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0084225BA895D00815634 /* PinchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		4BA0082B25BA411A00815634 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BA0083625BA49DE00815634 /* PanGestureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanGestureViewController.swift; sourceTree = "<group>"; };
 		4BA0083D25BA7AB700815634 /* SwipeGestureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeGestureViewController.swift; sourceTree = "<group>"; };
+		4BA0084225BA895D00815634 /* PinchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				4BA0082125BA411700815634 /* GesturesListViewController.swift */,
 				4BA0083625BA49DE00815634 /* PanGestureViewController.swift */,
 				4BA0083D25BA7AB700815634 /* SwipeGestureViewController.swift */,
+				4BA0084225BA895D00815634 /* PinchViewController.swift */,
 				4BA0082325BA411700815634 /* Main.storyboard */,
 				4BA0082625BA411A00815634 /* Assets.xcassets */,
 				4BA0082825BA411A00815634 /* LaunchScreen.storyboard */,
@@ -148,6 +151,7 @@
 				4BA0082225BA411700815634 /* GesturesListViewController.swift in Sources */,
 				4BA0081E25BA411700815634 /* AppDelegate.swift in Sources */,
 				4BA0082025BA411700815634 /* SceneDelegate.swift in Sources */,
+				4BA0084325BA895D00815634 /* PinchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

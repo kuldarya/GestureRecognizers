@@ -18,6 +18,7 @@ class PanGestureViewController: UIViewController {
         
         fileImageView.image = UIImage(named: "file")
         trashImageView.image = UIImage(named: "trashFull")
+        navigationItem.title = "Pan Gesture"
         
         addPanGesture(view: fileImageView)
         fileViewOrigin = fileImageView.frame.origin

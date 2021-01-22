@@ -43,6 +43,7 @@
                                         <state key="normal" title="Pinch Gesture Recognizer"/>
                                         <connections>
                                             <action selector="openPinchGesture:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HU3-tN-ZjT"/>
+                                            <segue destination="zsw-vs-cjm" kind="show" id="2HI-ZK-Vn4"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BR5-YH-CMS">
@@ -116,6 +117,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yyi-yZ-mu4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2611.594202898551" y="109.82142857142857"/>
+        </scene>
+        <!--Pinch View Controller-->
+        <scene sceneID="dyo-Kh-Ggt">
+            <objects>
+                <viewController id="zsw-vs-cjm" customClass="PinchViewController" customModule="GestureRecognizers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="acv-7F-vY8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q0N-w4-Vpb">
+                                <rect key="frame" x="57" y="298" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="30j-TV-YTX"/>
+                                    <constraint firstAttribute="width" secondItem="q0N-w4-Vpb" secondAttribute="height" multiplier="1:1" id="HBQ-Je-mQ6"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FUc-JT-Y9Y"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="q0N-w4-Vpb" firstAttribute="centerY" secondItem="acv-7F-vY8" secondAttribute="centerY" id="eqp-K0-Jx8"/>
+                            <constraint firstItem="q0N-w4-Vpb" firstAttribute="centerX" secondItem="acv-7F-vY8" secondAttribute="centerX" id="x9k-PU-Ej1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="enO-0j-xN3"/>
+                    <connections>
+                        <outlet property="imageView" destination="q0N-w4-Vpb" id="hkY-7e-hMo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D4N-H5-koN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3383" y="110"/>
         </scene>
         <!--Pan Gesture View Controller-->
         <scene sceneID="Qhi-l4-neV">

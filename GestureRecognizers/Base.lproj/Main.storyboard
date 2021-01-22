@@ -61,6 +61,7 @@
                                         <state key="normal" title="Tap Gesture Recognizer"/>
                                         <connections>
                                             <action selector="openTapGesture:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yul-zF-4qO"/>
+                                            <segue destination="Ja5-da-JSy" kind="show" id="dJx-qd-9TW"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Je-hJ-9dw">
@@ -242,6 +243,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rsd-Fa-For" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="110.49107142857143"/>
+        </scene>
+        <!--Tap View Controller-->
+        <scene sceneID="apy-Ys-plh">
+            <objects>
+                <viewController id="Ja5-da-JSy" customClass="TapViewController" customModule="GestureRecognizers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Utf-pf-fM5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="doy-ge-iDH">
+                                <rect key="frame" x="60" y="208" width="294" height="294"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="doy-ge-iDH" secondAttribute="height" multiplier="1:1" id="24k-zN-24S"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rjs-yj-eyi"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rjs-yj-eyi" firstAttribute="trailing" secondItem="doy-ge-iDH" secondAttribute="trailing" constant="60" id="3xQ-9l-xqD"/>
+                            <constraint firstItem="doy-ge-iDH" firstAttribute="top" secondItem="rjs-yj-eyi" secondAttribute="top" constant="120" id="aHA-QW-Suq"/>
+                            <constraint firstItem="doy-ge-iDH" firstAttribute="leading" secondItem="rjs-yj-eyi" secondAttribute="leading" constant="60" id="rKm-Ap-Ru8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="dCf-kT-mxK"/>
+                    <connections>
+                        <outlet property="imageView" destination="doy-ge-iDH" id="y0B-xB-blJ"/>
+                        <outlet property="leadingImageViewConstraint" destination="rKm-Ap-Ru8" id="HOd-9l-FSz"/>
+                        <outlet property="topImageViewConstraint" destination="aHA-QW-Suq" id="TE1-Sg-qt4"/>
+                        <outlet property="trailingImageViewConstraint" destination="3xQ-9l-xqD" id="MUU-e0-TqR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oer-eF-2TG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4922" y="110"/>
         </scene>
     </scenes>
     <resources>

@@ -12,4 +12,5 @@ enum NavigationTitle: String {
     case swipe = "Swipe Gesture"
     case pinch = "Pinch Gesture"
     case rotate = "Rotate Gesture"
+    case tap = "Tap to Zoom"
 }

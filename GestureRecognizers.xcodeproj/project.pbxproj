@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B6278A225BB691500816008 /* TapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6278A125BB691500816008 /* TapViewController.swift */; };
 		4BA0081E25BA411700815634 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0081D25BA411700815634 /* AppDelegate.swift */; };
 		4BA0082025BA411700815634 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0081F25BA411700815634 /* SceneDelegate.swift */; };
 		4BA0082225BA411700815634 /* GesturesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0082125BA411700815634 /* GesturesListViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B6278A125BB691500816008 /* TapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapViewController.swift; sourceTree = "<group>"; };
 		4BA0081A25BA411700815634 /* GestureRecognizers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GestureRecognizers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BA0081D25BA411700815634 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BA0081F25BA411700815634 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				4BA0083D25BA7AB700815634 /* SwipeGestureViewController.swift */,
 				4BA0084225BA895D00815634 /* PinchViewController.swift */,
 				4BA0084625BB625700815634 /* RotateGestureViewController.swift */,
+				4B6278A125BB691500816008 /* TapViewController.swift */,
 			);
 			path = GestureViewControllers;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				4BA0081E25BA411700815634 /* AppDelegate.swift in Sources */,
 				4BA0082025BA411700815634 /* SceneDelegate.swift in Sources */,
 				4BA0084325BA895D00815634 /* PinchViewController.swift in Sources */,
+				4B6278A225BB691500816008 /* TapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

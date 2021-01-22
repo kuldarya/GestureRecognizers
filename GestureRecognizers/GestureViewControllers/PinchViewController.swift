@@ -13,7 +13,7 @@ class PinchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.title = "Pinch Gesture"
+        navigationItem.title = NavigationTitle.pinch.rawValue
         imageView.image = UIImage(named: "apple")
         
         addPinchGesture()

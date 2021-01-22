@@ -52,6 +52,7 @@
                                         <state key="normal" title="Rotate Gesture Recognizer"/>
                                         <connections>
                                             <action selector="openRotateGesture:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ucq-4u-iBw"/>
+                                            <segue destination="qTx-VN-keX" kind="show" id="c1R-3e-nym"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGz-W4-Pyy">
@@ -60,6 +61,7 @@
                                         <state key="normal" title="Tap Gesture Recognizer"/>
                                         <connections>
                                             <action selector="openTapGesture:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yul-zF-4qO"/>
+                                            <segue destination="Ja5-da-JSy" kind="show" id="dJx-qd-9TW"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Je-hJ-9dw">
@@ -68,6 +70,7 @@
                                         <state key="normal" title="LongPress Gesture Recognizer"/>
                                         <connections>
                                             <action selector="openLongPressGesture:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nDq-RI-KhY"/>
+                                            <segue destination="YZ9-Jj-BUk" kind="show" id="82Y-tA-l3x"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -150,6 +153,38 @@
             </objects>
             <point key="canvasLocation" x="3383" y="110"/>
         </scene>
+        <!--Rotate Gesture View Controller-->
+        <scene sceneID="FEB-JS-Ja8">
+            <objects>
+                <viewController id="qTx-VN-keX" customClass="RotateGestureViewController" customModule="GestureRecognizers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9cI-ST-z9h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gGJ-iv-S82">
+                                <rect key="frame" x="57" y="298" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Cuw-d2-kp0"/>
+                                    <constraint firstAttribute="width" secondItem="gGJ-iv-S82" secondAttribute="height" multiplier="1:1" id="ebd-gy-QbD"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xWd-9m-HmU"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gGJ-iv-S82" firstAttribute="centerY" secondItem="9cI-ST-z9h" secondAttribute="centerY" id="gDe-yX-ovu"/>
+                            <constraint firstItem="gGJ-iv-S82" firstAttribute="centerX" secondItem="9cI-ST-z9h" secondAttribute="centerX" id="zk1-7h-RM8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="cDZ-dD-aP7"/>
+                    <connections>
+                        <outlet property="imageView" destination="gGJ-iv-S82" id="zqu-Yk-3RY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lbd-QD-sry" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4168" y="110"/>
+        </scene>
         <!--Pan Gesture View Controller-->
         <scene sceneID="Qhi-l4-neV">
             <objects>
@@ -209,6 +244,71 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rsd-Fa-For" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="110.49107142857143"/>
+        </scene>
+        <!--Tap View Controller-->
+        <scene sceneID="apy-Ys-plh">
+            <objects>
+                <viewController id="Ja5-da-JSy" customClass="TapViewController" customModule="GestureRecognizers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Utf-pf-fM5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="doy-ge-iDH">
+                                <rect key="frame" x="60" y="208" width="294" height="294"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="doy-ge-iDH" secondAttribute="height" multiplier="1:1" id="24k-zN-24S"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rjs-yj-eyi"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rjs-yj-eyi" firstAttribute="trailing" secondItem="doy-ge-iDH" secondAttribute="trailing" constant="60" id="3xQ-9l-xqD"/>
+                            <constraint firstItem="doy-ge-iDH" firstAttribute="top" secondItem="rjs-yj-eyi" secondAttribute="top" constant="120" id="aHA-QW-Suq"/>
+                            <constraint firstItem="doy-ge-iDH" firstAttribute="leading" secondItem="rjs-yj-eyi" secondAttribute="leading" constant="60" id="rKm-Ap-Ru8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="dCf-kT-mxK"/>
+                    <connections>
+                        <outlet property="imageView" destination="doy-ge-iDH" id="y0B-xB-blJ"/>
+                        <outlet property="leadingImageViewConstraint" destination="rKm-Ap-Ru8" id="HOd-9l-FSz"/>
+                        <outlet property="topImageViewConstraint" destination="aHA-QW-Suq" id="TE1-Sg-qt4"/>
+                        <outlet property="trailingImageViewConstraint" destination="3xQ-9l-xqD" id="MUU-e0-TqR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oer-eF-2TG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4922" y="110"/>
+        </scene>
+        <!--Long Press View Controller-->
+        <scene sceneID="pdn-qU-MVV">
+            <objects>
+                <viewController id="YZ9-Jj-BUk" customClass="LongPressViewController" customModule="GestureRecognizers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pqr-nw-YbK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="acj-an-8JW">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xMT-4K-5Mu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="acj-an-8JW" firstAttribute="leading" secondItem="xMT-4K-5Mu" secondAttribute="leading" id="6wl-ns-kRb"/>
+                            <constraint firstItem="acj-an-8JW" firstAttribute="top" secondItem="xMT-4K-5Mu" secondAttribute="top" id="9hO-SP-cqE"/>
+                            <constraint firstItem="xMT-4K-5Mu" firstAttribute="trailing" secondItem="acj-an-8JW" secondAttribute="trailing" id="CIx-W7-Ieh"/>
+                            <constraint firstItem="xMT-4K-5Mu" firstAttribute="bottom" secondItem="acj-an-8JW" secondAttribute="bottom" id="P8e-ek-5jk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="C0Q-Ng-Th6"/>
+                    <connections>
+                        <outlet property="mapView" destination="acj-an-8JW" id="bc2-uv-8V8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M7b-fm-3Uf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5687" y="110"/>
         </scene>
     </scenes>
     <resources>

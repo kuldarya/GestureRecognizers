@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+enum NavigationTitle: String {
+    case pan = "Pan Gesture"
+    case swipe = "Swipe Gesture"
+    case pinch = "Pinch Gesture"
+    case rotate = "Rotate Gesture"
+}

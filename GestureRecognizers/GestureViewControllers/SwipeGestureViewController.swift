@@ -21,7 +21,7 @@ class SwipeGestureViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.title = "Swipe Gesture"
+        navigationItem.title = NavigationTitle.swipe.rawValue
         
         imageAppear()
         addSwipeGesture()

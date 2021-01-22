@@ -70,8 +70,8 @@
 				4BA0082125BA411700815634 /* GesturesListViewController.swift */,
 				4BA0084E25BB63AE00815634 /* GestureViewControllers */,
 				4BA0084D25BB639F00815634 /* Enums */,
-				4BA0082325BA411700815634 /* Main.storyboard */,
 				4BA0085125BB63E600815634 /* Supporting */,
+				4BA0082325BA411700815634 /* Main.storyboard */,
 				4BA0082B25BA411A00815634 /* Info.plist */,
 			);
 			path = GestureRecognizers;

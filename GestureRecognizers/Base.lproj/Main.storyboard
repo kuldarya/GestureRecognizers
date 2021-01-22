@@ -52,6 +52,7 @@
                                         <state key="normal" title="Rotate Gesture Recognizer"/>
                                         <connections>
                                             <action selector="openRotateGesture:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ucq-4u-iBw"/>
+                                            <segue destination="qTx-VN-keX" kind="show" id="c1R-3e-nym"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGz-W4-Pyy">
@@ -149,6 +150,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D4N-H5-koN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3383" y="110"/>
+        </scene>
+        <!--Rotate Gesture View Controller-->
+        <scene sceneID="FEB-JS-Ja8">
+            <objects>
+                <viewController id="qTx-VN-keX" customClass="RotateGestureViewController" customModule="GestureRecognizers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9cI-ST-z9h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="xWd-9m-HmU"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cDZ-dD-aP7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lbd-QD-sry" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4168" y="110"/>
         </scene>
         <!--Pan Gesture View Controller-->
         <scene sceneID="Qhi-l4-neV">

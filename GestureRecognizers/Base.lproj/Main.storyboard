@@ -91,10 +91,36 @@
                     <view key="view" contentMode="scaleToFill" id="qHV-un-dbg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dlE-PD-byc">
+                                <rect key="frame" x="20" y="108" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dlE-PD-byc" secondAttribute="height" multiplier="1:1" id="5L7-Cz-Z9e"/>
+                                    <constraint firstAttribute="width" constant="100" id="Ner-4n-Bfm"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IMJ-3z-cGn">
+                                <rect key="frame" x="294" y="742" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="IMJ-3z-cGn" secondAttribute="height" multiplier="1:1" id="XlH-Ag-OBo"/>
+                                    <constraint firstAttribute="width" constant="100" id="bBV-ml-83P"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="WYh-9e-tHV"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dlE-PD-byc" firstAttribute="leading" secondItem="WYh-9e-tHV" secondAttribute="leading" constant="20" id="B50-s9-3yL"/>
+                            <constraint firstItem="dlE-PD-byc" firstAttribute="top" secondItem="WYh-9e-tHV" secondAttribute="top" constant="20" id="aIT-kx-XMw"/>
+                            <constraint firstItem="WYh-9e-tHV" firstAttribute="trailing" secondItem="IMJ-3z-cGn" secondAttribute="trailing" constant="20" id="imF-q3-jst"/>
+                            <constraint firstItem="WYh-9e-tHV" firstAttribute="bottom" secondItem="IMJ-3z-cGn" secondAttribute="bottom" constant="20" id="no7-YS-ZA5"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ZTa-gb-zXm"/>
+                    <connections>
+                        <outlet property="fileImageView" destination="dlE-PD-byc" id="DnQ-XI-pDW"/>
+                        <outlet property="trashImageView" destination="IMJ-3z-cGn" id="jFX-1t-hyK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ViR-8c-wYi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

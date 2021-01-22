@@ -12,7 +12,7 @@ class GesturesListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.title = "Gesture Recognizers"
+        navigationItem.title = NavigationTitle.list.rawValue
     }
 
     @IBAction private func openPanGesture(_ sender: UIButton) {

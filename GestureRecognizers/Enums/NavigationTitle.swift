@@ -8,6 +8,7 @@
 import Foundation
 
 enum NavigationTitle: String {
+    case list = "Gesture Recognizers"
     case pan = "Pan Gesture"
     case swipe = "Swipe Gesture"
     case pinch = "Pinch Gesture"

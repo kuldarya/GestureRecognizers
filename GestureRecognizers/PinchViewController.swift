@@ -26,16 +26,22 @@ class PinchViewController: UIViewController {
     }
     
     private func addPinchGesture() {
-        let pinch = UIPinchGestureRecognizer(target: self, action: #selector(pinchImage(sender:)))
+        let pinch = UIPinchGestureRecognizer(target: self, action: #selector(pinchImage(_:)))
         imageView.addGestureRecognizer(pinch)
     }
     
-    @objc private func pinchImage(sender: UIPinchGestureRecognizer) {
-        guard let gestureView = sender.view else {
-            return
-        }
+    @objc private func pinchImage(_ gestureRecognizer: UIPinchGestureRecognizer) {
+        guard let gestureView = gestureRecognizer.view else { return }
         
-        gestureView.transform = gestureView.transform.scaledBy(x: sender.scale, y: sender.scale)
-        sender.scale = 1
+        switch gestureRecognizer.state {
+        case .began, .changed:
+            gestureView.transform = (gestureView.transform.scaledBy(x: gestureRecognizer.scale,
+                                                                    y: gestureRecognizer.scale))
+            gestureRecognizer.scale = 1.0
+        case .ended:
+            break
+        default:
+            break
+        }
     }
 }

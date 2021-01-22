@@ -24,7 +24,7 @@ class PanGestureViewController: UIViewController {
         view.bringSubviewToFront(fileImageView)
     }
     
-    func addPanGesture(view: UIView) {
+    private func addPanGesture(view: UIView) {
         let pan = UIPanGestureRecognizer(target: self, action: #selector(handlePan(sender:)))
         view.addGestureRecognizer(pan)
     }

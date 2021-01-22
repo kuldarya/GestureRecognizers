@@ -34,6 +34,7 @@
                                         <state key="normal" title="Swipe Gesture Recognizer"/>
                                         <connections>
                                             <action selector="openSwipeGesture:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vgd-db-llf"/>
+                                            <segue destination="sjp-OX-5kU" kind="show" id="S11-uF-VnG"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mod-04-veI">
@@ -84,6 +85,38 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="110.49107142857143"/>
         </scene>
+        <!--Swipe Gesture View Controller-->
+        <scene sceneID="8xF-3O-cX3">
+            <objects>
+                <viewController id="sjp-OX-5kU" customClass="SwipeGestureViewController" customModule="GestureRecognizers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="age-I1-lGJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CxB-N2-YQs">
+                                <rect key="frame" x="20" y="188" width="374" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="YHe-3Q-GcK"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zfP-Zc-6Lj"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zfP-Zc-6Lj" firstAttribute="trailing" secondItem="CxB-N2-YQs" secondAttribute="trailing" constant="20" id="DtJ-lp-yUC"/>
+                            <constraint firstItem="CxB-N2-YQs" firstAttribute="leading" secondItem="zfP-Zc-6Lj" secondAttribute="leading" constant="20" id="V04-7p-pS3"/>
+                            <constraint firstItem="CxB-N2-YQs" firstAttribute="top" secondItem="zfP-Zc-6Lj" secondAttribute="top" constant="100" id="jkp-Dv-L5K"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jQy-0z-kmE"/>
+                    <connections>
+                        <outlet property="imageView" destination="CxB-N2-YQs" id="lq5-bZ-i1H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yyi-yZ-mu4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2611.594202898551" y="109.82142857142857"/>
+        </scene>
         <!--Pan Gesture View Controller-->
         <scene sceneID="Qhi-l4-neV">
             <objects>
@@ -124,7 +157,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ViR-8c-wYi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1864" y="-256"/>
+            <point key="canvasLocation" x="1841" y="110"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MsI-EF-IiC">
